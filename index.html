@@ -70,38 +70,39 @@
 </head>
 
 <body>
-    <div id="header">
-        <h1>Employee Management System</h1>
-        <!-- 
-            LOGO
-            WEBSITE NAME
-            NAVIGATION
-          -->
-    </div>
+    <main>
+        <section>
+            <h2>Employee Registration Form</h2>
 
-    <div class="container">
-        <div id="sidebar">
-            <h3>Menu</h3>
+            <form action="#" method="POST">
+                <label for="">Fist Name</label><br />
+                <input type="text" name="first_name" /><br /><br />
 
-            <a href="#">Home</a>
-            <a href="#">Employees</a>
-            <a href="#">Department</a>
-            <a href="#">About</a>
-        </div>
+                <label for="">Last Name</label><br />
+                <input type="text" name="last_name" /><br /><br />
 
-        <div id="main">
-            <h1>Welcome</h1>
-            <p>This is our Employee Management System</p>
-        </div>
+                <label for="">Email</label><br />
+                <input type="text" name="email" /><br /><br />
 
-        <div id="section">
-            <h4>Section</h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, eligendi?
-            </p>
-        </div>
+                <label for="">Department</label>
+                <option value="">IT</option>
+                <option value="">HR</option>
+                <option value="">Accounting</option>
+                <option value="">Marketing</option>
 
-    </div>
+                <br /><br />
+
+                <address>Address</address>
+                <br/>
+
+                <textarea name="address" id="" rows="5"></textarea>
+
+                <br /><br />
+
+                <button type="submit">Register Employee</button>
+            </form>
+        </section>
+    </main>
 
     <div id="footer">
         <footer>
