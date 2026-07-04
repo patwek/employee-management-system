@@ -1,19 +1,204 @@
+body {
+    background-color: #F8FAFC;
+    color: #334155;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: aqua;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.home-header h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: azure;
+    padding: 20px;
+}
+
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 0 25px 0 0;
+}
+
 main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: #10B981;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 1px;
+    flex: 1;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: gray;
+    padding: 20px;
+    margin: 3px;
+    flex: 1;
+}
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: first baseline;
+    background-color: gray;
+    padding: 20px;
+    margin: 3px;
+    flex: 1;
+}
+
+aside {
+    background-color: #3be2ab;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 1px;
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#emp-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    /* Allows the table area to expand naturally */
+    width: auto;
+    /* Preve
+    nts the table from stretching too wide on giant screens */
 }
 
 table {
-    background-color: wheat;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    /* Optional: Makes the text readable against the green background */
 }
 
-th {
-    border: 1px solid black;
-    padding: 5px;
-}
-
+th,
 td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#section-form {
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    width: auto;
+    margin: 20px auto;
+    padding: 0 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: auto;
+    margin: 20px;
+    font-size: 20px;
+}
+
+input,
+textarea,
+select,
+button {
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #3be2ab;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: ce;
+    width: auto;
+    margin: 20px;
+    height: 100%;
+}
+
+#topic {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 20px;
+    width: 100%;
+}
+
+#one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
     border: 1px solid black;
+    height: 50vh;
+}
+
+#mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    flex: 1;
+    margin: 5px;
+    padding: 5px;
+    background-color: #29ca5f;
+    height: 48vh;
+}
+
+#vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    flex: 1;
+    margin: 5px;
+    padding: 5px;
+    background-color: #ebc6eb;
+    height: 48vh;
 }

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Employee Management System</title>
+</head>
+
+<body>
+    <header>
+        <div class="home-header">
+            <h1>Employee Management System</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="total_employees.html">Employee</a>
+        <a href="register.html">Register</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main>
+        <section>
+            <section id="section-form">
+                <h2>Register Employee</h2>
+
+                <form action="register.php" method="POST">
+                    <label for="fullname">Enter Full Name</label>
+                    <input type="text" name="fullname" id="fullname" />
+
+                    <label for="email">Enter Email</label>
+                    <input type="text" name="email" id="email" />
+
+                    <label for="contact">Enter Contact</label>
+                    <input type="text" name="contact" id="contact" />
+
+                    <label for="Age">Enter Age</label>
+                    <input type="text" name="age" id="age" />
+
+                    <label for="gender">Choose Gender</label>
+                    <select name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+
+                    <label for="department">Choose Department</label>
+                    <select name="department" id="department">
+              <option value="it">IT</option>
+              <option value="hr">HR</option>
+              <option value="marketing">Marketing</option>
+            </select>
+
+                    <label for="address">Enter Address</label>
+                    <textarea name="address" id="address"></textarea>
+
+                    <button type="submit" name="submit">Submit</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name or Company Name. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
